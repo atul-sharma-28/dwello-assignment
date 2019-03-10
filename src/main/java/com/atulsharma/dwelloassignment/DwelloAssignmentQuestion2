@@ -1,0 +1,1 @@
+SELECT department.name, COUNT(employee.id) FROM department LEFT JOIN employee on employee.dept_id = department.id  GROUP BY department.name ORDER BY COUNT(employee.id) DESC, department.name ASC;
